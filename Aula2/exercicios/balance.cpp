@@ -2,11 +2,11 @@
 #include <vector>
 #include <iostream>
 
-bool balanced(std::string& c)
+bool balanced(std::string const& expression)
 {
   std::vector<char> aux;
 
-  for (auto& i: c) {
+  for (auto& i: expression) {
     if (i == '(' or i == '[' or i == '{') {
       aux.push_back(i);
     } else if (i == ')') {
@@ -32,9 +32,9 @@ bool balanced(std::string& c)
 
   if(aux.empty()) {
     return true;
-  } else {
-    return false;
   }
+
+  return false;
 }
 
 int main()

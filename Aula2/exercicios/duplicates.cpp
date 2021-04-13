@@ -3,11 +3,15 @@
 
 std::vector<int> remove_duplicates(std::vector<int> const& numbers)
 {
+  if (numbers.empty()) {
+    return {};
+  }
+
   std::vector<int> aux;
-  for (auto i = 0u; i < numbers.size(); ++i) {
-    if (i == 0) {
-      aux.push_back(numbers[i]);
-    } else if (aux.back() != numbers[i]) {
+  aux.push_back(numbers.front());
+
+  for (auto i = 1u; i < numbers.size(); ++i) {
+    if (aux.back() != numbers[i]) {
       aux.push_back(numbers[i]);
     }
   }

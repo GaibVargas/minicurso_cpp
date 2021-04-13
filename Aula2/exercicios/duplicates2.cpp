@@ -3,11 +3,20 @@
 
 void remove_duplicates(std::vector<int>& numbers)
 {
-  for (auto i = numbers.begin(); i != numbers.end(); ++i) {
-    if (*i > 0 and numbers[*i] == numbers[*i - 1]) {
-      numbers.erase(i);
+  if (numbers.empty()) {
+    numbers = {};
+  }
+
+  std::vector<int> aux;
+  aux.push_back(numbers.front());
+
+  for (auto i = 1u; i < numbers.size(); ++i) {
+    if (numbers[i] != numbers[i - 1]) {
+      aux.push_back(numbers[i]);
     }
   }
+
+  numbers = aux;
 }
 
 int main()
