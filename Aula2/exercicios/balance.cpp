@@ -54,6 +54,5 @@ int main()
     std::cout << "Case " << c << " is "
               << (balanced(c) ? "balanced" : "not balanced")
               << '\n';
-
   }
 }
