@@ -51,7 +51,7 @@ int main()
   };
 
   for (auto c: cases) {
-    std::cout << "Case " << c << " is "
+    std::cout << "Case " << c << " is " 
               << (balanced(c) ? "balanced" : "not balanced")
               << '\n';
   }
