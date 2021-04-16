@@ -9,24 +9,31 @@ bool balanced(std::string const& expression)
   for (auto& i: expression) {
     if (i == '(' or i == '[' or i == '{') {
       aux.push_back(i);
-    } else if (i == ')') {
-      if (!aux.empty() and aux.back() == '(') {
-        aux.pop_back();
-      } else {
+      continue;
+    }
+
+    if (aux.empty() or i == ')') {
+      if (aux.back() != '(') {
         return false;
       }
-    } else if (i == ']') {
-      if (!aux.empty() and aux.back() == '[') {
-        aux.pop_back();
-      } else {
+
+      aux.pop_back();
+    }
+
+    if (aux.empty() or i == ']') {
+      if (aux.back() != '[') {
         return false;
       }
-    } else if (i == '}') {
-      if (!aux.empty() and aux.back() == '{') {
-        aux.pop_back();
-      } else {
+
+      aux.pop_back();
+    }
+
+    if (aux.empty() or i == '}') {
+      if (aux.back() != '{') {
         return false;
       }
+
+      aux.pop_back();
     }
   }
 
