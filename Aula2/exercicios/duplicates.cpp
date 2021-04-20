@@ -7,8 +7,7 @@ std::vector<int> remove_duplicates(std::vector<int> const& numbers)
     return {};
   }
 
-  std::vector<int> aux;
-  aux.push_back(numbers.front());
+  auto aux = std::vector<int>{numbers.front()};
 
   for (auto i = 1u; i < numbers.size(); ++i) {
     if (aux.back() != numbers[i]) {
