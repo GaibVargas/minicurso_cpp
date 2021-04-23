@@ -6,8 +6,8 @@
 
 namespace school {
 
-std::vector<school::Student> approved(std::vector<school::Student> const&);
-std::vector<school::Student> dismissed_by_time(std::vector<school::Student> const&, int year);
+std::vector<Student> approved(std::vector<Student> const&);
+std::vector<Student> dismissed_by_time(std::vector<Student> const&, int year);
 
 }
 

@@ -2,9 +2,9 @@
 #include "student.hpp"
 
 namespace school {
-std::vector<school::Student> approved(std::vector<school::Student> const& students)
+std::vector<Student> approved(std::vector<Student> const& students)
 {
-  auto students_approved = std::vector<school::Student>{};
+  auto students_approved = std::vector<Student>{};
 
   for (auto const& student: students) {
     if (student.average() >= 6.0) {
@@ -15,9 +15,9 @@ std::vector<school::Student> approved(std::vector<school::Student> const& studen
   return students_approved;
 }
 
-std::vector<school::Student> dismissed_by_time(std::vector<school::Student> const& students, int year)
+std::vector<Student> dismissed_by_time(std::vector<Student> const& students, int year)
 {
-  auto students_dismissed = std::vector<school::Student>{};
+  auto students_dismissed = std::vector<Student>{};
 
   for (auto const& student: students) {
     if (student.years_enrolled(year) > 7) {
