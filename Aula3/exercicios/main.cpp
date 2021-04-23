@@ -11,11 +11,11 @@ int main()
   using school::Student;
 
   // TODO: initialize a vector called `students` here
-  auto student1 = school::Student{"Aluno1", 2020, {5, 5.5, 7}};
-  auto student2 = school::Student{"Aluno2", 2015, {8, 4, 6}};
-  auto student3 = school::Student{"Aluno3", 2010, {4, 8, 9}};
-
-  auto students = std::vector<school::Student>{student1, student2, student3};
+  auto students = std::vector<Student>{
+    Student{"Aluno1", 2020, {5, 5.5, 7}},
+    Student{"Aluno2", 2015, {8, 4, 6}},
+    Student{"Aluno3", 2010, {4, 8, 9}}
+  };
 
   for (auto s : school::approved(students))
   {

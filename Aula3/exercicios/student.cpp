@@ -2,7 +2,7 @@
 
 namespace school {
 
-double Student::average()
+double Student::average() const
 {
   auto total = 0.0;
 
@@ -13,9 +13,9 @@ double Student::average()
   return total/notes_.size();
 }
 
-int Student::years_enrolled(int currentYear)
+int Student::years_enrolled(int current_year) const
 {
-  return currentYear - year_;
+  return current_year - year_;
 }
 
 }

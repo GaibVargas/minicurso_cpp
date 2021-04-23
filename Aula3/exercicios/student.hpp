@@ -7,8 +7,8 @@ namespace school {
 
 class Student {
 public:
-    Student(std::string s, int year, std::vector<double> notes):
-      name_{s}, year_{year}, notes_{notes}
+    Student(std::string const& name, int year, std::vector<double> notes):
+      name_{name}, year_{year}, notes_{notes}
     {}
 
     std::string name() const
@@ -21,13 +21,13 @@ public:
       return year_;
     }
 
-    std::vector<double> notes() const
+    std::vector<double> notes() const&
     {
       return notes_;
     }
 
-    double average();
-    int years_enrolled(int);
+    double average() const;
+    int years_enrolled(int) const;
 
 private:
     std::string name_;
