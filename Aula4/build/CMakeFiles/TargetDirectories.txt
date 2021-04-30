@@ -1,0 +1,6 @@
+/home/gabriel/Programacao/Minicurso C++/Aula4/build/CMakeFiles/rebuild_cache.dir
+/home/gabriel/Programacao/Minicurso C++/Aula4/build/CMakeFiles/edit_cache.dir
+/home/gabriel/Programacao/Minicurso C++/Aula4/build/CMakeFiles/exercise3.dir
+/home/gabriel/Programacao/Minicurso C++/Aula4/build/school/CMakeFiles/rebuild_cache.dir
+/home/gabriel/Programacao/Minicurso C++/Aula4/build/school/CMakeFiles/edit_cache.dir
+/home/gabriel/Programacao/Minicurso C++/Aula4/build/school/CMakeFiles/school.dir
