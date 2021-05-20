@@ -1,0 +1,3 @@
+/home/gabriel/Programacao/Minicurso C++/Aula6/build/CMakeFiles/rebuild_cache.dir
+/home/gabriel/Programacao/Minicurso C++/Aula6/build/CMakeFiles/edit_cache.dir
+/home/gabriel/Programacao/Minicurso C++/Aula6/build/CMakeFiles/school_inherit.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/school_inherit.dir/course.cpp.o CMakeFiles/school_inherit.dir/student.cpp.o CMakeFiles/school_inherit.dir/functions.cpp.o CMakeFiles/school_inherit.dir/main.cpp.o  -o school_inherit 

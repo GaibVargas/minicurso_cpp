@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gabriel/Programacao/Minicurso C++/Aula5/src/functions.hpp
+string
+-
+iosfwd
+-
+vector
+-
+student.hpp
+/home/gabriel/Programacao/Minicurso C++/Aula5/src/student.hpp
+
+/home/gabriel/Programacao/Minicurso C++/Aula5/src/main.cpp
+iostream
+-
+fstream
+-
+student.hpp
+/home/gabriel/Programacao/Minicurso C++/Aula5/src/student.hpp
+functions.hpp
+/home/gabriel/Programacao/Minicurso C++/Aula5/src/functions.hpp
+
+/home/gabriel/Programacao/Minicurso C++/Aula5/src/student.hpp
+string
+-
+vector
+-
+
